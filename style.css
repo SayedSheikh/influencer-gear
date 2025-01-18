@@ -3,3 +3,80 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+
+/* header style */
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 87px;
+}
+/* navbar styles */
+
+ul li {
+  list-style: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.navbar ul {
+  display: flex;
+  gap: 34px;
+}
+.navbar ul li {
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+}
+header h3 {
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.bar i {
+  font-size: 1.5rem;
+  color: rgba(27, 27, 27, 1);
+}
+.bar {
+  display: none;
+}
+.search i {
+  font-size: 1.5rem;
+  color: black;
+}
+.cart i {
+  font-size: 2rem;
+  color: black;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero .desc {
+  max-width: 580px;
+}
+.hero .cover-image {
+  max-width: 475px;
+  background: url("./images/Circle\ design.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 33px 31px 0;
+}
+.cover-image .image {
+  max-width: 440px;
+}
+.image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+}
