@@ -146,10 +146,14 @@ header h3 {
 
 /* cards container design */
 
-.cards-container {
+.cards {
   max-width: 1047px;
   margin: 0 auto;
-  margin-bottom: 170px;
+  margin-bottom: 100px;
+  position: relative;
+}
+.cards-container {
+  margin-bottom: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -211,6 +215,26 @@ header h3 {
 .card > img {
   width: 100%;
   border-radius: 5px;
+}
+.cards .para {
+  width: 99px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  position: relative;
+  left: calc(100% - 100px);
+}
+
+.cards .para p {
+  color: rgba(224, 44, 109, 0.87);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+}
+.cards .para i {
+  font-size: 1rem;
+  color: rgba(224, 44, 109, 0.87);
 }
 
 @media screen and (max-width: 576px) {
