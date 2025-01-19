@@ -6,11 +6,15 @@
 
 /* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
 
+body {
+  padding: 0 15px;
+}
 /* header style */
 header {
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 87px;
+  margin-bottom: 50px;
 }
 /* navbar styles */
 
@@ -20,10 +24,12 @@ ul li {
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 50px;
 }
 .navbar ul {
   display: flex;
+  align-items: center;
   gap: 34px;
 }
 .navbar ul li {
@@ -63,6 +69,43 @@ header h3 {
 .hero .desc {
   max-width: 580px;
 }
+.desc h2 {
+  color: #3a3a3a;
+
+  font-family: Poppins;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 70px;
+}
+.desc p {
+  max-width: 500px;
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 16px 0;
+}
+
+.desc button {
+  padding: 10px 24px;
+}
+.desc button i {
+  font-size: 1.5rem;
+}
+.desc button {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border-radius: 41px;
+  background: #e02c6d;
+  border: none;
+}
+
 .hero .cover-image {
   max-width: 475px;
   background: url("./images/Circle\ design.svg");
@@ -77,6 +120,74 @@ header h3 {
 .image img {
   width: 100%;
 }
+/* logo section design */
+.logo {
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.logos {
+  padding: 35px 0 33px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 60px;
+}
+.logo hr {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50.38%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
+  border: none;
+}
 
 @media screen and (max-width: 576px) {
+  .navbar ul .navigation {
+    display: none;
+  }
+  .bar {
+    display: initial;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    gap: 14px;
+    text-align: center;
+  }
+  .desc button {
+    display: block;
+    margin: 0 auto;
+  }
+  .logo hr {
+    display: none;
+  }
+  .logos {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .navbar ul .navigation {
+    display: none;
+  }
+  .bar {
+    display: initial;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    gap: 14px;
+    text-align: center;
+  }
+  .desc button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
